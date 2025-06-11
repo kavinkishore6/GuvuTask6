@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form with Default Values</title>
+</head>
+<body>
+    <h2>Form with Default Values</h2>
+
+    <form action="#" method="post">
+        <!-- Text input -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" value="Kavin Kishore"><br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value="kavin@mail.com"><br><br>
+
+        <!-- Radio buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Skills:</label><br>
+        <input type="checkbox" id="html" name="skills" value="HTML" checked>
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="India" selected>India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select><br><br>
+
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" value="2000-02-06"><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30">this is kavin form.</textarea><br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
