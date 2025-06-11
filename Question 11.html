@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/samplecode.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>All Input Types</title>
+</head>
+<body>
+    <h2>Form with All Input Types</h2>
+
+    <form action="http://127.0.0.1:5500/samplecode.html#" method="post">
+
+        <!-- Text -->
+        <label for="text">Text:</label><br>
+        <input type="text" id="text" name="text" value="Kavin Kishore"><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value="Kavin@email.com"><br><br>
+
+        <!-- Number -->
+        <label for="number">Number:</label><br>
+        <input type="number" id="number" name="number" value="10"><br><br>
+
+        <!-- Date -->
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" value="2025-05-05"><br><br>
+
+        <!-- Time -->
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time"><br><br>
+
+        <!-- Radio -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" checked=""> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <!-- Checkbox -->
+        <label>Languages Known:</label><br>
+        <input type="checkbox" name="lang" value="HTML" checked=""> HTML
+        <input type="checkbox" name="lang" value="CSS"> CSS
+        <input type="checkbox" name="lang" value="JavaScript"> Java<br><br>
+
+ 
+
+        <!-- File -->
+        <label for="file">Upload File:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Search -->
+        <label for="search">Search:</label><br>
+        <input type="search" id="search" name="search" value="HTML"><br><br>
+
+   
+
+        <!-- URL -->
+        <label for="url">Website:</label><br>
+        <input type="url" id="url" name="url" value="https://example.com"><br><br>
+
+    
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40">kavinn from namakkal.</textarea><br><br>
+
+        <!-- Dropdown -->
+        <label for="dropdown">Select a country:</label><br>
+        <select id="dropdown" name="country">
+            <option value="India">India</option>
+            <option value="USA" selected="">USA</option>
+            <option value="UK">UK</option>
+        </select><br><br>
+
+        <!-- Submit & Reset -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
