@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Shelf Design</title>
+    <style>
+        table {
+            width: 60%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            border: 3px solid black;
+        }
+        td {
+            border: 2px solid black;
+            text-align: center;
+            padding: 40px;
+            font-size: 18px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Shelf Table Representation</h2>
+
+    <table>
+        <tr>
+            <td>🍷<br>Wine Glasses</td>
+            <td>🌿<br>Plant Pot</td>
+            <td>📚<br>Books</td>
+        </tr>
+    </table>
+</body>
+</html>
