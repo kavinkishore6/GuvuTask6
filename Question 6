@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employment Status</title>
+</head>
+<body>
+    <h2>Select Employment Type</h2>
+    <form action="#" method="post">
+        <label>
+            <input type="radio" name="employment" value="salaried" required>
+            Salaried
+        </label><br>
+
+        <label>
+            <input type="radio" name="employment" value="self-employed">
+            Self-Employed
+        </label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
